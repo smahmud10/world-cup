@@ -15,12 +15,12 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 }
-hr{
+ hr{
 	width: 100%;
 	border: none;
 	height: 1px;
 	background-color: rgb(75, 75, 75);
-}
+} 
 /* ----------------------------
      banner section styles
 ------------------------------- */
@@ -86,4 +86,118 @@ hr{
 	position: absolute;
 	bottom: 0;
 	width: 80%;
+}
+/* ----------------------------
+     main section styles
+------------------------------- */
+main{
+	display: flex;
+	justify-content: center;
+}
+.main-section{
+	max-width:1170px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	margin: 3em 0;
+}
+
+/* nav links styles */
+
+nav{
+	padding: 0 30px;
+	background-color: #161616;
+	border-radius: 10px;
+	height: 332px;
+}
+nav ul li{
+	width: 230px;
+	margin: 40px 0;
+	list-style: none;
+	text-align: center;
+	border-radius: 10px;
+	padding: 17px 0;
+	background-color: white;
+}
+nav ul li a{
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #000;
+}
+.active{
+	background-color: red;
+}
+.active a{
+	color: #fff;
+}
+
+/* blogs styles */
+.main-section> div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blogs{
+	padding:0 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.blog{
+	box-shadow: 2px 2px 5px gray;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.blog-thumbail{
+	width: 100%;
+}
+.blog-thumbail img{
+	width: 100%;
+}
+
+.blog-detail{
+	padding: 15px;
+	background-color: rgb(251, 248, 248);
+}
+.transfer-btn{
+	border: 1px solid #161616;
+	padding: 5px 15px;
+    border-radius: 5px;
+	background-color: transparent;
+}
+.transfer-btn a{
+	Font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #161616;
+}
+.blog-title{
+	margin: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.blog-icon, .blog-icon>span{
+	display: flex;
+	align-items: center;
+}
+.blog-icon>span>i{
+	margin-right: 10px;
+}
+.blog-duration{
+	margin-right: 2em;
+}
+.view-all-btn{
+	display: none;
+	margin-top: 20px;
+	border: none;
+	background-color: #DD0000;
+	padding: 12px 28px;
+	border-radius: 5px;
+}
+.view-all-btn a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
 }
