@@ -276,3 +276,157 @@ footer h2{
 	max-width: 80px;
 	max-height: 56px;
 }
+
+/* ------------------------------------
+  all group pages point table styles  
+  -----------------------------------*/
+  .team-point table{
+	align-items: center;
+	width: 100%;
+	padding: 0 20px 20px;
+
+}
+.team-point .blog-title{
+	display: flex;
+	justify-content: space-around;
+}
+.team-point table th, td{
+	padding: 10px 12px;
+}
+
+/* point table country color styles */
+
+.color-navyblue{
+	color: #001559;
+}
+.color-skyblue{
+	color: #5CA6F7;
+}
+.color-green{
+	color: #0F8034;
+}
+.color-red{
+	color: #E71D25;
+}
+
+/* ----------------
+    media query 
+------------------ */
+
+
+/* media query for mobile devies */
+
+@media only screen and (max-width:577px) {
+	.banner{
+		height: 100vh;
+		flex-direction: column;
+		margin: 0;
+	}
+	.banner-text{
+		width: 100%;
+		margin-left: 0;
+		padding: 1.5em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-title{
+		font-size: 2em;
+	}
+	.banner-text>p{
+		width: 80%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.banner-img{
+	    max-width: 100%;
+	}
+	.banner-img img{
+		height: 100%;
+	}
+	nav{
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		margin: 20px 0;
+		border: 1px solid gray;
+	}
+	.main-section, .blogs{
+		grid-template-columns: 1fr;
+	}
+	footer h2{
+		font-size: 1.4em;
+	}
+	.footer-links{
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-media-icons{
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+ 
+/* media query for medium devies */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+	.banner{
+		max-height: 398px;
+		max-width: 734px;
+	}
+	.banner-text{
+		width: 40%;
+	}
+	.banner-title {
+		font-size: 2em;
+	}
+	.banner-text>p{
+		font-size: 14px;
+		height: 48px;
+		overflow: hidden;
+	}
+	.banner-img{
+		width: 60%;
+	}
+	.main-section {
+		grid-template-columns: 1fr;
+	    justify-content: center;
+	}
+	.main-section nav {
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main-section nav ul {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.main-section nav ul li {
+		width: 150px;
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.main-section nav ul li a{
+		font-size: 14px;
+	}
+	.blogs {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.view-all-btn{
+		display: block;
+	}
+	.social-media-icons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
